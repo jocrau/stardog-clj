@@ -19,12 +19,9 @@
   :url "http://stardog.com"
   :license {:name "Apache License"
             :url "http://www.apache.org/licenses/LICENSE-2.0"}
-  :dependencies [[org.clojure/clojure "1.8.0"]
-                 [com.complexible.stardog/client-http "5.0.2" :extension "pom"]
-
-		]
+  :dependencies [[org.clojure/clojure "1.9.0"]
+                 [com.complexible.stardog/client-http "5.3.5" :extension "pom"]]
   :repositories [["stardog" "http://maven.stardog.com"]]
-  :plugins [[jonase/eastwood "0.0.2"]
-            [lein-midje "3.1.3"]]
-  :profiles {:dev {:dependencies [[midje "1.6.3"]]
-                  :plugins [[lein-midje "3.1.3"]]}} )
+  :plugins [[jonase/eastwood "0.3.1"]]
+  :profiles {:dev {:dependencies [[midje "1.9.3"]]
+                   :plugins [[lein-midje "3.1.3"]]}})
